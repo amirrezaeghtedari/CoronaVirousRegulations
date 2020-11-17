@@ -1,0 +1,38 @@
+//Incident level hints
+"Less than" = "Less than";
+"More than" = "More than";
+"No. of Incidence in 100,000" = "No. of Incidence in 100,000";
+
+//Regulations names
+"General Regulations" = "General Regulations";
+"Green Regulations" = "Green Regulations";
+"Yellow Regulations" = "Yellow Regulations";
+"Red Regulations" = "Red Regulations";
+"Dark Red Regulations" = "Dark Red Regulations";
+
+//General Regulations
+"keepDistance" = "Keep your distance as much as possible.";
+"refreshRoom" = "Refresh room air regularly.";
+"washHands" = "Wash your hands frequently.";
+"wearMask" = "Wear mask.";
+
+//Green Regulations
+"faceToFaceContactInPublicAreas" = "Limitations of face-to-face contact in public spaces.";
+"privateEvents100" = "Private events ( i.e. weddings etc. ) with a maximum of 100 participants in closed spaces and a maximum of 200 participants in the open.";
+"wearingMaskMandatory10" = "Wearing a mask is mandatory when ( including, but not limited to ) using public transportation, going shopping, eating and drinking in restaurants, bars, etc. and in case minimum distance (1.5m ) cannot be kept.";
+
+//Yellow Regulaitons
+"privateEvents10" = "Private parties and contacts: no more than two households or ten people.";
+"wearingMaskMandatory9" = "Wearing a mask is mandatory in heavily frequented spaces, in pedestrian zones, in public buildings, in secondary schools during class, in universities, for attendees of ( sports ) events, etc.";
+"alcoholConsumption10" = "Curfew and ban on selling as well as consuming alcohol in public spaces from 23:00 on.";
+
+//Red Regulations
+"privateEvents5" = "Private parties and contacts: no more than 5 households or five people.";
+"wearingMaskMandatory8" = "Wearing a mask is mandatory in heavily frequented spaces, in pedestrian zones, in public buildings, for all grades during class, in universities, for attendees of ( sports ) events, etc.";
+"alcoholConsumption9" = "Curfew and ban on selling as well as consuming alcohol in public spaces from 22:00 on.";
+
+//Notification
+"localNotificationTitle" = "COVID 19 Threat Level Changed.";
+"localNotificationBody" = "Threat level changed in your area. Check new regulations in the app.";
+
+

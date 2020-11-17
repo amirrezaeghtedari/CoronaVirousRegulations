@@ -1,0 +1,37 @@
+//Incident level hints
+"Less than" = "Weniger als";
+"More than" = "Mehr als";
+"No. of Incidence in 100,000" = "Anzahl der Fälle in 100.000";
+
+//Regulations names
+"General Regulations" = "Allgemeine Bestimmungen";
+"Green Regulations" = "Grüne Vorschriften";
+"Yellow Regulations" = "Gelbe Vorschriften";
+"Red Regulations" = "Rote Vorschriften";
+"Dark Red Regulations" = "Dunkelrote Vorschriften";
+
+//General Regulations
+"keepDistance" = "Halten Sie so viel Abstand wie möglich.";
+"refreshRoom" = "Aktualisieren Sie die Raumluft regelmäßig.";
+"washHands" = "Waschen Sie Ihre Hände häufig.";
+"wearMask" = "Tragen Sie eine Maske.";
+
+//Green Regulations
+"faceToFaceContactInPublicAreas" = "Einschränkungen des persönlichen Kontakts im öffentlichen Raum.";
+"privateEvents100" = "Private Veranstaltungen (d. H. Hochzeiten usw.) mit maximal 100 Teilnehmern in geschlossenen Räumen und maximal 200 Teilnehmern im Freien.";
+"wearingMaskMandatory10" = "Das Tragen einer Maske ist obligatorisch, wenn (einschließlich, aber nicht beschränkt auf) die Nutzung öffentlicher Verkehrsmittel, Einkaufen, Essen und Trinken in Restaurants, Bars usw. und der Mindestabstand (1,5 m) nicht eingehalten werden kann.";
+
+//Yellow Regulaitons
+"privateEvents10" = "Private Feiern und Kontakte: nicht mehr als zwei Haushalte oder zehn Personen.";
+"wearingMaskMandatory9" = "Das Tragen einer Maske ist in stark frequentierten Räumen, in Fußgängerzonen, in öffentlichen Gebäuden, in weiterführenden Schulen während des Unterrichts, an Universitäten, für Teilnehmer an (Sport-) Veranstaltungen usw. obligatorisch.";
+"alcoholConsumption10" = "Ausgangssperre und Verbot des Verkaufs sowie des Konsums von Alkohol im öffentlichen Raum ab 23:00 Uhr.";
+
+//Red Regulations
+"privateEvents5" = "Private Feiern und Kontakte: nicht mehr als 5 Haushalte oder fünf Personen.";
+"wearingMaskMandatory8" = "Das Tragen einer Maske ist in stark frequentierten Räumen, in Fußgängerzonen, in öffentlichen Gebäuden, für alle Klassenstufen, an Universitäten, für Teilnehmer an (Sport-) Veranstaltungen usw. obligatorisch.";
+"alcoholConsumption9" = "Ausgangssperre und Verbot des Verkaufs sowie des Konsums von Alkohol im öffentlichen Raum ab 22:00 Uhr.";
+
+//Notification
+"localNotificationTitle" = "COVID 19 Bedrohungsstufe geändert";
+"localNotificationBody" = "Die Bedrohungsstufe in Ihrer Region hat sich geändert. Überprüfen Sie neue Vorschriften in der App.";
+
