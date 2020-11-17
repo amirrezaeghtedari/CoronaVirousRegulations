@@ -32,6 +32,10 @@ struct RegulationSectionViewModel {
 		case .red:
 			self.color = .red
 			self.title = NSLocalizedString("Red Regulations", comment: "")
+			
+		case .darkRed:
+			self.color = .darkRed
+			self.title = NSLocalizedString("Dark Red Regulations", comment: "")
 		}
 	}
 	

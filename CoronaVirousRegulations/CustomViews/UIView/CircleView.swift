@@ -9,6 +9,8 @@ import UIKit
 
 class CircleView: UIView {
 	
+	weak var delegate: CircleViewDelegate?
+	
 	let incidentsLabel 	= UILabel()
 	let hintLabel		= UILabel()
 	let loadingView		= UIActivityIndicatorView(frame: .zero)
@@ -21,11 +23,24 @@ class CircleView: UIView {
 		configIncidentsLabel()
 		configHintLabel()
 		configLoadingView()
+		configGesture()
 	}
 	
 	required init?(coder: NSCoder) {
 		
 		fatalError("init(coder:) has not been implemented")
+	}
+	
+	func configGesture() {
+		
+		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap))
+		addGestureRecognizer(tapGesture)
+	}
+	
+	@objc
+	func didTap() {
+		
+		delegate?.circleViewDidTap(circleView: self)
 	}
 	
 	func configLoadingView() {
@@ -93,10 +108,11 @@ class CircleView: UIView {
 		])
 	}
 	
-	func set(incidentsCount: String, incidentColor: UIColor, circleColor: UIColor) {
+	func set(incidentsCount: String, hint: String, incidentColor: UIColor, circleColor: UIColor) {
 		
 		incidentsLabel.text 		= incidentsCount
 		incidentsLabel.textColor	= incidentColor
+		hintLabel.text				= hint
 		hintLabel.textColor			= incidentColor
 		backgroundColor				= circleColor
 		layer.shadowColor			= circleColor.cgColor

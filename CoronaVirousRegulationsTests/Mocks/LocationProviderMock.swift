@@ -14,13 +14,12 @@ class LocationProviderMock: LocationProviderInterface {
 	
 	static var coordinate: Coordinate?
 	
-	func requestCoordinate() {
+	func requestCoordinate(locationIncidator: Bool) {
 		
 		if let coordinate = Self.coordinate {
 			delegate?.locationProvider(self, didReceiveCoordinate: coordinate)
 		} else {
 			delegate?.locationProvider(self, didFailWithError: NSError(domain: "Failed to do so", code: 0, userInfo: nil))
 		}
-		
 	}
 }

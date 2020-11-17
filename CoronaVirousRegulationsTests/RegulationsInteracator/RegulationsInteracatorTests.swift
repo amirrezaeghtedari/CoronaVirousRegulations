@@ -18,9 +18,9 @@ class RegulationsInteracatorTests: XCTestCase {
         
 		let locationProvider = LocationProviderMock()
 		
-		let sut = RegulationsInteractor(entityProvider: EntityProviderMock(),
+		sut = RegulationsInteractor(entityProvider: EntityProvider(),
 							  locationProvider: locationProvider,
-							  incidentsProvider: IncidentsProviderMock(),
+							  incidentsProvider: IncidentsProviderMock2(),
 							  threatColorStorProvider: ThreatColorStoreProvider(),
 							  backgroundFetchOperationType: BackgroundFetchOperation.self)
 		sut.delegate = delegate
@@ -39,7 +39,7 @@ class RegulationsInteracatorTests: XCTestCase {
 		EntityProviderMock.generalRegulations = [.alcoholConsumption10, .alcoholConsumption9, .faceToFaceContactInPublicAreas]
 		LocationProviderMock.coordinate = Coordinate(latitude: 9, longitude: 50)
 		RegulationsInteractorDelegateMock.didGetGeneralInfo = { generalInfo in
-			if (generalInfo.threatLevels.count == 1) && (generalInfo.generalRegulations.count == 3) {
+			if (generalInfo.threatLevels.count != 0) && (generalInfo.generalRegulations.count != 0) {
 				exp.fulfill()
 			}
 		}
@@ -55,7 +55,7 @@ class RegulationsInteracatorTests: XCTestCase {
 		exp.expectedFulfillmentCount = 2
 		
 		LocationProviderMock.coordinate = Coordinate(latitude: 9, longitude: 50)
-		IncidentsProviderMock.result = Result.success(33)
+		IncidentsProviderMock2.result = Result.success(33)
 		
 		RegulationsInteractorDelegateMock.didStartGetRegulation = {
 			exp.fulfill()
@@ -63,6 +63,7 @@ class RegulationsInteracatorTests: XCTestCase {
 		
 		RegulationsInteractorDelegateMock.didGetIncidentsInfo = { result in
 			if case Result.success(let incidentsInfo) = result {
+				print(incidentsInfo.incidentsNo)
 				if incidentsInfo.incidentsNo == 33 {
 					exp.fulfill()
 				}
@@ -71,7 +72,7 @@ class RegulationsInteracatorTests: XCTestCase {
 		
 		sut.getIncidentsInfo()
 	
-		waitForExpectations(timeout: 5, handler: nil)
+		waitForExpectations(timeout: 15, handler: nil)
     }
 
 }

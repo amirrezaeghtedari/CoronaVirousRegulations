@@ -12,4 +12,5 @@ enum ThreatColor: String {
 	case green
 	case yellow
 	case red
+	case darkRed
 }

@@ -57,8 +57,10 @@
 		E17AEE092557061000D0A86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17AEE082557061000D0A86A /* Assets.xcassets */; };
 		E17AEE172557061000D0A86A /* RegulationsInteracatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AEE162557061000D0A86A /* RegulationsInteracatorTests.swift */; };
 		E17AEE222557061000D0A86A /* CoronaVirousRegulationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AEE212557061000D0A86A /* CoronaVirousRegulationsUITests.swift */; };
+		E18F4C2F256426EB0041DC26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E18F4C2E256426EB0041DC26 /* README.md */; };
+		E18F4C342564337C0041DC26 /* LocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F4C332564337C0041DC26 /* LocationProviderMock.swift */; };
 		E1990EDE255C2BE600CAED32 /* EntityProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1990EDD255C2BE600CAED32 /* EntityProviderMock.swift */; };
-		E1990EE9255C2D2D00CAED32 /* IncidentsProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1990EE8255C2D2D00CAED32 /* IncidentsProviderMock.swift */; };
+		E1990EE9255C2D2D00CAED32 /* IncidentsProviderMock2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1990EE8255C2D2D00CAED32 /* IncidentsProviderMock2.swift */; };
 		E1990EF1255C2F2800CAED32 /* LocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1990EF0255C2F2800CAED32 /* LocationProviderMock.swift */; };
 		E1999B1025597E29002D3FC2 /* IncidentsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999B0F25597E29002D3FC2 /* IncidentsProvider.swift */; };
 		E1999B1925597EA2002D3FC2 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1999B1825597EA2002D3FC2 /* LocationProvider.swift */; };
@@ -78,6 +80,9 @@
 		E1E5E961255C619500D4A472 /* AttributesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5E960255C619500D4A472 /* AttributesResponseModel.swift */; };
 		E1EDA711255AD76F00944517 /* RgulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EDA710255AD76200944517 /* RgulationTableViewCell.swift */; };
 		E1EDA72E255B1B1300944517 /* RegulationSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EDA72D255B1B1300944517 /* RegulationSectionView.swift */; };
+		E1F41DC425654CD000BF95CB /* CircleViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F41DC325654CD000BF95CB /* CircleViewDelegate.swift */; };
+		E1F41DCD256556A000BF95CB /* AppStoryboard.xd in Resources */ = {isa = PBXBuildFile; fileRef = E1F41DCB256556A000BF95CB /* AppStoryboard.xd */; };
+		E1F41DCE256556A000BF95CB /* AppIcon.xd in Resources */ = {isa = PBXBuildFile; fileRef = E1F41DCC256556A000BF95CB /* AppIcon.xd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,9 +159,10 @@
 		E17AEE1D2557061000D0A86A /* CoronaVirousRegulationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaVirousRegulationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17AEE212557061000D0A86A /* CoronaVirousRegulationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaVirousRegulationsUITests.swift; sourceTree = "<group>"; };
 		E17AEE232557061000D0A86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E17AEEFE25570E2300D0A86A /* CoronaVirousRegulations.xd */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoronaVirousRegulations.xd; sourceTree = "<group>"; };
+		E18F4C2E256426EB0041DC26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E18F4C332564337C0041DC26 /* LocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProviderMock.swift; sourceTree = "<group>"; };
 		E1990EDD255C2BE600CAED32 /* EntityProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityProviderMock.swift; sourceTree = "<group>"; };
-		E1990EE8255C2D2D00CAED32 /* IncidentsProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsProviderMock.swift; sourceTree = "<group>"; };
+		E1990EE8255C2D2D00CAED32 /* IncidentsProviderMock2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsProviderMock2.swift; sourceTree = "<group>"; };
 		E1990EF0255C2F2800CAED32 /* LocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProviderMock.swift; sourceTree = "<group>"; };
 		E1999B0F25597E29002D3FC2 /* IncidentsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsProvider.swift; sourceTree = "<group>"; };
 		E1999B1825597EA2002D3FC2 /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
@@ -177,6 +183,9 @@
 		E1E5E960255C619500D4A472 /* AttributesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesResponseModel.swift; sourceTree = "<group>"; };
 		E1EDA710255AD76200944517 /* RgulationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgulationTableViewCell.swift; sourceTree = "<group>"; };
 		E1EDA72D255B1B1300944517 /* RegulationSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegulationSectionView.swift; sourceTree = "<group>"; };
+		E1F41DC325654CD000BF95CB /* CircleViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDelegate.swift; sourceTree = "<group>"; };
+		E1F41DCB256556A000BF95CB /* AppStoryboard.xd */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppStoryboard.xd; sourceTree = "<group>"; };
+		E1F41DCC256556A000BF95CB /* AppIcon.xd */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.xd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +383,7 @@
 		E17AEDF32557060F00D0A86A = {
 			isa = PBXGroup;
 			children = (
+				E18F4C2E256426EB0041DC26 /* README.md */,
 				E17AEDFE2557060F00D0A86A /* CoronaVirousRegulations */,
 				E17AEE152557061000D0A86A /* CoronaVirousRegulationsTests */,
 				E17AEE202557061000D0A86A /* CoronaVirousRegulationsUITests */,
@@ -451,7 +461,8 @@
 		E17AEED925570E2300D0A86A /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				E17AEEFE25570E2300D0A86A /* CoronaVirousRegulations.xd */,
+				E1F41DCC256556A000BF95CB /* AppIcon.xd */,
+				E1F41DCB256556A000BF95CB /* AppStoryboard.xd */,
 				E13183B9255C170F001BFE64 /* Artworks */,
 			);
 			path = Design;
@@ -525,7 +536,7 @@
 			isa = PBXGroup;
 			children = (
 				E1990EDD255C2BE600CAED32 /* EntityProviderMock.swift */,
-				E1990EE8255C2D2D00CAED32 /* IncidentsProviderMock.swift */,
+				E1990EE8255C2D2D00CAED32 /* IncidentsProviderMock2.swift */,
 				E1CBB77D255C33CB00FCBEEC /* RegulationsInteractorDelegateMock.swift */,
 				E1990EF0255C2F2800CAED32 /* LocationProviderMock.swift */,
 			);
@@ -549,6 +560,7 @@
 			children = (
 				E1999B1825597EA2002D3FC2 /* LocationProvider.swift */,
 				E164F23B255FEF6800B17DB9 /* LocationProviderDelegate.swift */,
+				E18F4C332564337C0041DC26 /* LocationProviderMock.swift */,
 			);
 			path = LocationProvider;
 			sourceTree = "<group>";
@@ -603,6 +615,7 @@
 			children = (
 				E15BE88E2562A7D400CF8396 /* LoadingView.swift */,
 				E1999B2125598490002D3FC2 /* CircleView.swift */,
+				E1F41DC325654CD000BF95CB /* CircleViewDelegate.swift */,
 				E1999B2F25599F50002D3FC2 /* LevelView.swift */,
 			);
 			path = UIView;
@@ -722,10 +735,13 @@
 			files = (
 				E13183C1255C170F001BFE64 /* keepDistance.ai in Resources */,
 				E13183C2255C170F001BFE64 /* wearMask.ai in Resources */,
+				E1F41DCE256556A000BF95CB /* AppIcon.xd in Resources */,
+				E1F41DCD256556A000BF95CB /* AppStoryboard.xd in Resources */,
 				E13183C0255C170F001BFE64 /* washHands.ai in Resources */,
 				E1D674BA25585376008C85F9 /* Localizable.strings in Resources */,
 				E13183C5255C170F001BFE64 /* refreshRoom.ai in Resources */,
 				E17AEE092557061000D0A86A /* Assets.xcassets in Resources */,
+				E18F4C2F256426EB0041DC26 /* README.md in Resources */,
 				E1B538CF2562DDE500E510BD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +767,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18F4C342564337C0041DC26 /* LocationProviderMock.swift in Sources */,
 				E102A50725582F3300F72FDC /* IncidentsInfo.swift in Sources */,
 				E102A54325584CCE00F72FDC /* ThreatLevel.swift in Sources */,
 				E13A938E255C563C00B839A8 /* InternetReachability.swift in Sources */,
@@ -760,6 +777,7 @@
 				E175B8B725603BA50076E074 /* ThreatColorStoreProviderInterface.swift in Sources */,
 				E1092685255D4D3E005A8AF1 /* IncidentsProviderMock.swift in Sources */,
 				E1999B2B25598768002D3FC2 /* TextColorViewModel.swift in Sources */,
+				E1F41DC425654CD000BF95CB /* CircleViewDelegate.swift in Sources */,
 				E15819132558238A000A5A8F /* RegulationsInteractorInterface.swift in Sources */,
 				E17AEE042557060F00D0A86A /* RegulationsViewController.swift in Sources */,
 				E1999B1925597EA2002D3FC2 /* LocationProvider.swift in Sources */,
@@ -814,7 +832,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1990EE9255C2D2D00CAED32 /* IncidentsProviderMock.swift in Sources */,
+				E1990EE9255C2D2D00CAED32 /* IncidentsProviderMock2.swift in Sources */,
 				E17AEE172557061000D0A86A /* RegulationsInteracatorTests.swift in Sources */,
 				E1990EDE255C2BE600CAED32 /* EntityProviderMock.swift in Sources */,
 				E1CBB77E255C33CB00FCBEEC /* RegulationsInteractorDelegateMock.swift in Sources */,

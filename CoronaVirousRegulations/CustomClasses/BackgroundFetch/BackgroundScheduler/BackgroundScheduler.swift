@@ -20,7 +20,7 @@ class BackgroundScheduler {
 		let locationProvider 			= LocationProvider()
 		let incidentsAPIProvider 		= IncidentsAPIProvider()
 		let networkLoader 				= NetworkLoader()
-		let incidentsProvider 			= IncidentsProviderMock(apiProvider: incidentsAPIProvider, networkLoader: networkLoader)
+		let incidentsProvider 			= IncidentsProvider(apiProvider: incidentsAPIProvider, networkLoader: networkLoader)
 		let entityProvider				= EntityProvider()
 		let threatColorStoreProvider 	= ThreatColorStoreProvider()
 		let localNotificationProvider   = LocalNotificationProvider()

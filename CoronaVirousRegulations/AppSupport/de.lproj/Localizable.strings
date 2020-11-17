@@ -31,7 +31,13 @@
 "wearingMaskMandatory8" = "Das Tragen einer Maske ist in stark frequentierten Räumen, in Fußgängerzonen, in öffentlichen Gebäuden, für alle Klassenstufen, an Universitäten, für Teilnehmer an (Sport-) Veranstaltungen usw. obligatorisch.";
 "alcoholConsumption9" = "Ausgangssperre und Verbot des Verkaufs sowie des Konsums von Alkohol im öffentlichen Raum ab 22:00 Uhr.";
 
+//Dark Red Regulations
+"publicEvents50" = "Veranstaltungen (z. B. Clubtreffen, Sportveranstaltungen, kulturelle Veranstaltungen usw.) dürfen 50 Personen nicht überschreiten.";
+"alcoholConsumption8" = "Schließzeit für Lebensmittel- / Gastronomie-Verkaufsstellen, Verbot des Alkoholverkaufs und des Alkoholkonsums in bestimmte öffentliche Plätze ab 21:00 Uhr.";
+
 //Notification
 "localNotificationTitle" = "COVID 19 Bedrohungsstufe geändert";
 "localNotificationBody" = "Die Bedrohungsstufe in Ihrer Region hat sich geändert. Überprüfen Sie neue Vorschriften in der App.";
 
+//
+"failed" = "Gescheitert";

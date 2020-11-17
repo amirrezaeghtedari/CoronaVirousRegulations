@@ -16,7 +16,10 @@ class EntityProvider: EntityProviderInterface {
 	let yellowHigh = 50
 	
 	let redLow = 50
-	let redHigh = Int.max
+	let redHigh = 100
+	
+	let darkRedLow = 100
+	let darkRedHigh = Int.max
 	
 	var greenLevel: ThreatLevel {
 		ThreatLevel(color: .green, lowerMargin: greenLow, upperMarging: greenHigh)
@@ -30,9 +33,13 @@ class EntityProvider: EntityProviderInterface {
 		ThreatLevel(color: .red, lowerMargin: redLow, upperMarging: redHigh)
 	}
 	
+	var darkRedLevel: ThreatLevel{
+		ThreatLevel(color: .darkRed, lowerMargin: redLow, upperMarging: redHigh)
+	}
+	
 	var threatLevels: [ThreatLevel] {
 		
-		[greenLevel, yellowLevel, redLevel]
+		[greenLevel, yellowLevel, redLevel, darkRedLevel]
 	}
 	
 	var generalRegulations: [Regulation] {
@@ -51,6 +58,10 @@ class EntityProvider: EntityProviderInterface {
 		[.privateEvents5, .wearingMaskMandatory8, .alcoholConsumption9]
 	}
 	
+	var darkRedRegulations: [Regulation] {
+		[.publicEvents50, .alcoholConsumption8]
+	}
+	
 	func detectThreatLevel(incidentsNo: Int) -> ThreatLevel {
 		
 		switch incidentsNo {
@@ -61,11 +72,14 @@ class EntityProvider: EntityProviderInterface {
 		case yellowLow..<yellowHigh:
 			return yellowLevel
 			
-		case redLow...redHigh:
+		case redLow..<redHigh:
 			return redLevel
+		
+		case darkRedLow..<darkRedHigh:
+			return darkRedLevel
 			
 		default:
-			return redLevel
+			return darkRedLevel
 		}
 	}
 	
@@ -83,6 +97,9 @@ class EntityProvider: EntityProviderInterface {
 		
 		case.red:
 			return IncidentsInfo(incidentsNo: incidentsNo, threatLevel: threatLevel, specialRegulations: redRegulations, generalRegulations: generalRegulations)
+			
+		case .darkRed:
+			return IncidentsInfo(incidentsNo: incidentsNo, threatLevel: threatLevel, specialRegulations: darkRedRegulations, generalRegulations: generalRegulations)
 		}
 	}
 }

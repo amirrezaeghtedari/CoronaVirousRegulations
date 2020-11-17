@@ -13,4 +13,5 @@ enum ColorViewModel {
 	case green
 	case yellow
 	case red
+	case darkRed
 }

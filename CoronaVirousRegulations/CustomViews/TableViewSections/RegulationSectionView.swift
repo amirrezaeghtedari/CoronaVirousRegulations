@@ -46,7 +46,7 @@ class RegulationSectionView: UIView {
 	
 	private func configLine() {
 		
-		line.backgroundColor = .systemGray
+		line.backgroundColor = .label
 		
 		line.translatesAutoresizingMaskIntoConstraints = false
 		self.addSubview(line)

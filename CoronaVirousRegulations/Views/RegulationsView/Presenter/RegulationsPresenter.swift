@@ -52,6 +52,10 @@ extension RegulationsPresenter: RegulationsInteractorDelegate {
 			case .red:
 				incidentsTextColor 	= .dark
 				incidentsBackColor 	= .red
+				
+			case .darkRed:
+				incidentsTextColor 	= .light
+				incidentsBackColor 	= .darkRed
 			}
 			
 			let specificRegulationSection = RegulationSectionViewModel(threatLevel: incidentsInfo.threatLevel, regulations: incidentsInfo.specialRegulations)

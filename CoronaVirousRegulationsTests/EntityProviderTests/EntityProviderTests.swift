@@ -31,7 +31,9 @@ class EntityProviderTests: XCTestCase {
 		XCTAssert(sut.detectThreatLevel(incidentsNo: sut.yellowHigh - 1).color == .yellow)
 		
 		XCTAssert(sut.detectThreatLevel(incidentsNo: sut.redLow).color == .red)
-		XCTAssert(sut.detectThreatLevel(incidentsNo: sut.redHigh).color == .red)
-		XCTAssert(sut.detectThreatLevel(incidentsNo: Int.max).color == .red)
+		XCTAssert(sut.detectThreatLevel(incidentsNo: sut.redHigh - 1).color == .red)
+		
+		XCTAssert(sut.detectThreatLevel(incidentsNo: sut.darkRedHigh).color == .darkRed)
+		XCTAssert(sut.detectThreatLevel(incidentsNo: Int.max).color == .darkRed)
 	}
 }

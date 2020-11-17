@@ -25,4 +25,7 @@ enum Regulation: String {
 	case privateEvents5
 	case wearingMaskMandatory8
 	case alcoholConsumption9
+	
+	case publicEvents50
+	case alcoholConsumption8
 }

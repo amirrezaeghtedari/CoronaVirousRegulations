@@ -131,6 +131,8 @@ class RegulationsViewController: UIViewController {
 	
 	func conficCircleView() {
 		
+		circleView.delegate = self
+		
 		circleView.translatesAutoresizingMaskIntoConstraints = false
 		headerView.addSubview(circleView)
 		
@@ -202,8 +204,10 @@ extension RegulationsViewController: RegulationsPresenterDelegate {
 			let textColor: UIColor
 			
 			switch threatLevel.textColor {
+			
 			case .dark:
 				textColor = .black
+			
 			case .light:
 				textColor = .white
 			}
@@ -211,14 +215,21 @@ extension RegulationsViewController: RegulationsPresenterDelegate {
 			let viewColor: UIColor
 			
 			switch threatLevel.levelColor {
+			
 			case .green:
 				viewColor = .systemGreen
+			
 			case .yellow:
 				viewColor = .systemYellow
+			
 			case .red:
 				viewColor = .systemRed
+			
 			case .gray:
 				viewColor = .systemGray
+			
+			case .darkRed:
+				viewColor = UIColor(named: "darkRed") ?? .systemGray
 			}
 			
 			let levelView = LevelView()
@@ -238,18 +249,20 @@ extension RegulationsViewController: RegulationsPresenterDelegate {
 	
 	func presenterDidGet(_ presenter: RegulationsPresenterInterface, incidentsInfo: Result<IncidentsViewModel, Error>) {
 		
-		circleView.dismissLoading()
-		
-		switch incidentsInfo {
-		
-		case .failure(_):
-			break
-			//It can be used to show alerts to users about their Internet connectivity or other kinf of warnings
+		DispatchQueue.main.async { [weak self] in
 			
-		case .success(let incidentsViewModel):
+			guard let self = self else { return }
 			
-			DispatchQueue.main.async { [weak self] in
-				self?.handleIncidentsViewModelSuccess(incidentsViewModel: incidentsViewModel)
+			self.circleView.dismissLoading()
+			
+			switch incidentsInfo {
+			
+			case .failure(_):
+				let failed = NSLocalizedString("failed", comment: "")
+				self.circleView.set(incidentsCount: "!", hint: failed, incidentColor: UIColor.black, circleColor: .systemGray)
+				
+			case .success(let incidentsViewModel):
+				self.handleIncidentsViewModelSuccess(incidentsViewModel: incidentsViewModel)
 			}
 		}
 	}
@@ -282,9 +295,13 @@ extension RegulationsViewController: RegulationsPresenterDelegate {
 			
 		case .gray:
 			circleColor = .systemGray
+			
+		case .darkRed:
+			circleColor = UIColor(named: "darkRed") ?? .systemGray
 		}
 		
-		circleView.set(incidentsCount: incidentsViewModel.incidentsNo, incidentColor: incidentTextColor, circleColor: circleColor)
+		let hint = NSLocalizedString("No. of Incidence in 100,000", comment: "")
+		circleView.set(incidentsCount: incidentsViewModel.incidentsNo, hint: hint, incidentColor: incidentTextColor, circleColor: circleColor)
 		
 		var snapshot = NSDiffableDataSourceSnapshot<RegulationSectionViewModel, RegulationViewModel>()
 		
@@ -311,27 +328,42 @@ extension RegulationsViewController: UITableViewDelegate {
 		
 		case .green:
 			lineColor = .systemGreen
+		
 		case .yellow:
 			lineColor = .systemYellow
+		
 		case .red:
 			lineColor = .systemRed
+		
 		case .gray:
-			lineColor = .systemGray4
+			lineColor = .label
+		
+		case .darkRed:
+			lineColor = UIColor(named: "darkRed") ?? .systemGray
 		}
 		
 		sectionView.set(title: title, lineColor: lineColor)
 		
 		return sectionView
 	}
-
 	
-	func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+	func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
 		
-		if scrollView.contentOffset.y == 0 {
+		if scrollView.contentOffset.y < 0 {
+			
 			circleView.showLoading()
 			interactor.getIncidentsInfo()
 		}
-		
 	}
+}
+
+extension RegulationsViewController: CircleViewDelegate {
+	
+	func circleViewDidTap(circleView: CircleView) {
+		
+		circleView.showLoading()
+		interactor.getIncidentsInfo()
+	}
+	
 }
 

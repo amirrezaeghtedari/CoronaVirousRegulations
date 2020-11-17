@@ -31,6 +31,11 @@ struct ThreatLevelViewModel {
 			self.levelColor 	= .red
 			self.description 	= NSLocalizedString("More than", comment: "") + " \(level.lowerMargin)"
 			self.textColor		= .dark
+			
+		case .darkRed:
+			self.levelColor 	= .darkRed
+			self.description 	= NSLocalizedString("More than", comment: "") + " \(level.lowerMargin)"
+			self.textColor		= .light
 		}
 	}
 }

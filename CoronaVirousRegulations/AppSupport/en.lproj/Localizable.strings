@@ -31,8 +31,16 @@
 "wearingMaskMandatory8" = "Wearing a mask is mandatory in heavily frequented spaces, in pedestrian zones, in public buildings, for all grades during class, in universities, for attendees of ( sports ) events, etc.";
 "alcoholConsumption9" = "Curfew and ban on selling as well as consuming alcohol in public spaces from 22:00 on.";
 
+//Dark Red Regulations
+"publicEvents50" = "Events ( e.g. club meetings, sporting events, cultural events, etc. ) must not exceed 50 persons.";
+"alcoholConsumption8" = "Closing time for food / gastronomy outlets, ban on alcohol sales and alcohol consumption sales in
+specific public places form 21:00.";
+
 //Notification
 "localNotificationTitle" = "COVID 19 Threat Level Changed.";
 "localNotificationBody" = "Threat level changed in your area. Check new regulations in the app.";
+
+//
+"failed" = "Failed";
 
 

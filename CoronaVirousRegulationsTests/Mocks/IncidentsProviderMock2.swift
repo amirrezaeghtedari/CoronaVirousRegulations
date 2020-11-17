@@ -8,7 +8,7 @@
 import Foundation
 @testable import CoronaVirousRegulations
 
-class IncidentsProviderMock: IncidentsProviderInterface {
+class IncidentsProviderMock2: IncidentsProviderInterface {
 	
 	static var result: Result<Int, Error>?
 	
