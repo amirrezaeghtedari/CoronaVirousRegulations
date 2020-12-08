@@ -14,7 +14,7 @@ class RegulationsViewControllerComposer {
 		let entityProvider 				= EntityProvider()
 		let networkLoader       		= NetworkLoader()
 		let apiProvider         		= IncidentsAPIProvider()
-		let incidentsProvider 			= IncidentsProvider(apiProvider: apiProvider, networkLoader: networkLoader)
+		let incidentsProvider 			= IncidentsProviderMock(apiProvider: apiProvider, networkLoader: networkLoader)
 		let locationProvider  			= LocationProvider()
 		let threatColorStoreProvider 	= ThreatColorStoreProvider()
 		

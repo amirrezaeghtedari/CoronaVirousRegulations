@@ -13,7 +13,6 @@ protocol NetworkAPIProviderInterface {
 	associatedtype ResponseModel: Codable
 	
 	func prepareURLRequest(request: RequestModel) throws -> URLRequest
-	
 	func parseResponse(data: Data) throws -> ResponseModel
 }
 

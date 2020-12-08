@@ -11,7 +11,6 @@ import Foundation
 protocol NetworkLoaderInterface {
 	
 	typealias Response = (data: Data, modelID: String?)
-	
 	typealias Completion = (Result<Response, NetworkError>) -> Void
 	
 	func loadRequest(request: URLRequest, modelID: String?, timeout: Double, completion: Completion?)

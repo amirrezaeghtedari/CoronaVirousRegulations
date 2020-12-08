@@ -16,9 +16,7 @@ struct NetworkError: Error, LocalizedError {
         case unableToComplete
         case invalidRequest
         case invalidResponse(Int)
-        case tokenNotExists
         case invalidData(Data?)
-        case invalidRequestData(String)
     }
     
     let errorKind: ErrorKind
@@ -36,19 +34,13 @@ struct NetworkError: Error, LocalizedError {
             return "Invalid Request"
         case let .invalidResponse(statusCode):
             return "Invalid Response. Status Code: \(statusCode)"
-        case .tokenNotExists:
-            return "There is not any Token to Send to server."
         case let .invalidData(data):
             if let data = data {
                 return String.init(data: data, encoding: .utf8)
             } else {
                 return "No data"
             }
-            
-        case let .invalidRequestData(input):
-            return "Your Input Data for Parameter \(input) is invalid."
         }
-        
     }
 }
 
