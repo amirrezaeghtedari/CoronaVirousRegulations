@@ -385,8 +385,8 @@
 			children = (
 				E18F4C2E256426EB0041DC26 /* README.md */,
 				E17AEDFE2557060F00D0A86A /* Covid19Regulations */,
-				E17AEE152557061000D0A86A /* CoronaVirousRegulationsTests */,
-				E17AEE202557061000D0A86A /* CoronaVirousRegulationsUITests */,
+				E17AEE152557061000D0A86A /* Covid19RegulationsTests */,
+				E17AEE202557061000D0A86A /* Covid19RegulationsUITests */,
 				E17AEDFD2557060F00D0A86A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			path = Covid19Regulations;
 			sourceTree = "<group>";
 		};
-		E17AEE152557061000D0A86A /* CoronaVirousRegulationsTests */ = {
+		E17AEE152557061000D0A86A /* Covid19RegulationsTests */ = {
 			isa = PBXGroup;
 			children = (
 				E17AEE182557061000D0A86A /* Info.plist */,
@@ -425,16 +425,16 @@
 				E1CBB782255C33D000FCBEEC /* RegulationsInteracator */,
 				E175B8CC25604CDB0076E074 /* ThreatColorStorProviderTests */,
 			);
-			path = CoronaVirousRegulationsTests;
+			path = Covid19RegulationsTests;
 			sourceTree = "<group>";
 		};
-		E17AEE202557061000D0A86A /* CoronaVirousRegulationsUITests */ = {
+		E17AEE202557061000D0A86A /* Covid19RegulationsUITests */ = {
 			isa = PBXGroup;
 			children = (
 				E17AEE212557061000D0A86A /* CoronaVirousRegulationsUITests.swift */,
 				E17AEE232557061000D0A86A /* Info.plist */,
 			);
-			path = CoronaVirousRegulationsUITests;
+			path = Covid19RegulationsUITests;
 			sourceTree = "<group>";
 		};
 		E17AEE772557069300D0A86A /* AppSupport */ = {
