@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E17AEDFB2557060F00D0A86A"
-               BuildableName = "CoronaVirousRegulations.app"
-               BlueprintName = "CoronaVirousRegulations"
-               ReferencedContainer = "container:CoronaVirousRegulations.xcodeproj">
+               BuildableName = "Covid19Regulations.app"
+               BlueprintName = "Covid19Regulations"
+               ReferencedContainer = "container:Covid19Regulations.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E17AEE112557061000D0A86A"
-               BuildableName = "CoronaVirousRegulationsTests.xctest"
-               BlueprintName = "CoronaVirousRegulationsTests"
-               ReferencedContainer = "container:CoronaVirousRegulations.xcodeproj">
+               BuildableName = "Covid19RegulationsTests.xctest"
+               BlueprintName = "Covid19RegulationsTests"
+               ReferencedContainer = "container:Covid19Regulations.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E17AEE1C2557061000D0A86A"
-               BuildableName = "CoronaVirousRegulationsUITests.xctest"
-               BlueprintName = "CoronaVirousRegulationsUITests"
-               ReferencedContainer = "container:CoronaVirousRegulations.xcodeproj">
+               BuildableName = "Covid19RegulationsUITests.xctest"
+               BlueprintName = "Covid19RegulationsUITests"
+               ReferencedContainer = "container:Covid19Regulations.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E17AEDFB2557060F00D0A86A"
-            BuildableName = "CoronaVirousRegulations.app"
-            BlueprintName = "CoronaVirousRegulations"
-            ReferencedContainer = "container:CoronaVirousRegulations.xcodeproj">
+            BuildableName = "Covid19Regulations.app"
+            BlueprintName = "Covid19Regulations"
+            ReferencedContainer = "container:Covid19Regulations.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <LocationScenarioReference
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E17AEDFB2557060F00D0A86A"
-            BuildableName = "CoronaVirousRegulations.app"
-            BlueprintName = "CoronaVirousRegulations"
-            ReferencedContainer = "container:CoronaVirousRegulations.xcodeproj">
+            BuildableName = "Covid19Regulations.app"
+            BlueprintName = "Covid19Regulations"
+            ReferencedContainer = "container:Covid19Regulations.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
