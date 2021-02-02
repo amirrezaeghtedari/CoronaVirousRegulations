@@ -1,4 +1,4 @@
-# Corona Virous Regulations
+# Covid 19 Regulations
 
 ## Overview
 This iOS application checks the number of COVID 19 incidents in the region of the user and classifies the infection threat level. Threat levels are divided into four colors, green, yellow, red, and dark red. Regarding the current threat level, specific and general regulations will be represented to the user. The app checks the number of incidents every 10 minutes, both in foreground and background mode by RESTFul API calls. When the app is in background mode, if the threat level changes from the last time it was in foreground mode, it informs the user about the threat level change by sending a local user notification.
